@@ -168,6 +168,12 @@ Template("lg_recall.csv", row =>
             .log()
             .once()
             .wait()
+        ,
+        // set a reminder of buttons
+        newText("F (not seen before)                  J (seen before)")
+            .css("font-size", "0.8em")
+            .center()
+            .print()
      )
         // log info
         .log("Word", row.Word)
