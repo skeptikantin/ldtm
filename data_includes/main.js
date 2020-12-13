@@ -128,7 +128,7 @@ Template("lg_study.csv", row =>
 
 newTrial("intermission",
     newText("<p>That's it for the memory phase. Now comes the recall phase.</p>" +
-    "<p>You will now see another 30 words. You will have to decide whether" +
+    "<p>You will now see another 30 words. You will have to decide whether<br/>" +
     "you have seen the word during the study phase.</p>"+
     "<p>Please indicate by using the <strong>F</strong> and <strong>K</strong> keys<br/>" +
     "(<strong>F = false, not seen before</strong> and <strong>J = yes, seen before</strong>)</p>" +
