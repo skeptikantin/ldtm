@@ -34,7 +34,6 @@ newTrial("intro",
     newText("<p>Welcome to this memory task!")
         .css("font-size", "1.5em")
         .css("font-family", "Verdana")
-        .center()
         .print()
     ,
     newText("<p><strong>Voluntary participation:</strong> I understand that my participation in this study is voluntary.<br/>" +
@@ -58,19 +57,18 @@ newTrial("instructions",
 
     newText("<p>In this experiment, we want to test whether and how well people can memorise words.</p>" +
         "<p>In the <strong>memory</strong> phase, you will see 30 words, one at a time, for 2 seconds each.<br/>"+
-        "Your task is to memorise the words. DO NOT WRITE THEM DOWN.</p>" +
-        "<p>In the <strong>recall</strong> phase, you are then shown another 30 words. Your task is to decide,<br/>" +
-        "as quickly and accurately as possible, whether you saw that word in the memory phase before.</p>" +
+        "Your task in this phase is to look at the words and memorise them. <strong>DO NOT WRITE THEM DOWN.</strong></p>" +
+        "<p>In the <strong>recall</strong> phase, you are then shown 30 additional words. Your task is to decide,<br/>" +
+        "as quickly and accurately as possible, whether you saw that word in the memory phase before.<br/>"+
+        "(There will be instructions on how to do this before the recall task.)</p>" +
         "<p><strong>IMPORTANT: Please do not write the words down</strong>, we want to know about human memory.<br/>" +
-        "(In fact, your response times will indicate whether you followed the instructions.<br/>" +
-        "because looking up words will take too long. But we assume you are cooperative anyway.)</p>")
+        "(In fact, your response times will show whether you followed the instructions or not<br/>" +
+        "because looking up words will take too long. We assume you are cooperative anyway.)</p>")
         .css("font-family", "Verdana")
-        .center()
         .print()
     ,
     newText("<p>Press SPACE to start the memory phase.</p>")
         .css("font-family", "Verdana")
-        .center()
         .print()
    ,
     newKey(" ")
@@ -119,17 +117,15 @@ Template("lg_study.csv", row =>
 
 newTrial("intermission",
     newText("<p>That's it for the memory phase. Now comes the recall phase.</p>" +
-    "<p>You will now see 30 words. You will have to decide whether you have seen the word during the study phase.</p>"+
-    "<p>Please indicate by using the <strong>F</strong> and <strong>K</strong> keys<br/>" +
-    "where <strong>F = false, not seen before</strong> and <strong>J = yes, seen before</strong>)</p>" +
-    "<p>Please answer as quickly as possible, but try to be accurate.</p>")
+    "<p>You will now see another 30 words. You will have to decide whether you have seen the word during the study phase.</p>"+
+    "<p>Please indicate by using the <strong>F</strong> and <strong>K</strong> keys</p>" +
+    "<p>Think <strong>F = false, not seen before</strong> and <strong>J = yes, seen before</strong></p>" +
+    "<p>Please answer as quickly as possible, but try to be accurate also.</p>")
         .css("font-family", "Verdana")
-        .center()
         .print()
     ,
-    newText("<p>Press SPACE when you are ready.</p>")
+    newText("<p>Please put your index fingers on the <strong>F</strong> and <strong>J</strong> keys and SPACE when you are ready.</p>")
         .css("font-family", "Verdana")
-        .center()
         .print()
     ,
     newKey(" ")
@@ -180,7 +176,7 @@ newTrial("debrief",
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p><strong>What do you think the experiment was about? Anything else you'd like to tell us?</strong></p>")
+    newText("<p><strong>What do you think the experiment was about?<br/>Anything else you'd like to tell us about your experience?</strong></p>")
         .css("font-family", "Verdana")
         .print()
     ,
