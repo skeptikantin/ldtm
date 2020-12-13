@@ -31,15 +31,20 @@ Header(
 
 newTrial("intro",
 
-    newText("<p>Welcome to this memory task!")
-        .css("font-size", "1.5em")
+    newText("<p>Welcome!</p>")
+        .css("font-size", "1.2em")
+        .css("font-family", "Verdana")
+        .print()
+    ,
+    newText("<p><strong>Informed Consent</strong>:</p>")
         .css("font-family", "Verdana")
         .print()
     ,
     newText("<p><strong>Voluntary participation:</strong> I understand that my participation in this study is voluntary.<br/>" +
-    "<strong>Withdrawal:</strong> I can withdraw my participation at any time during the experiment.<br/>"+
-    "<strong>Risks:</strong> There are no risks involved, except a slight annoyance with flickering text.<br/>"+
-    "<strong>Equipment:</strong> I am participating from a device with a physical keyboard.</p>")
+        "<strong>Withdrawal:</strong> I can withdraw my participation at any time during the experiment.<br/>"+
+        "<strong>Risks:</strong> There are no risks involved.<br/>"+
+        "<strong>Equipment:</strong> I am participating from a device with a <strong>physical keyboard</strong>.<br/>"+
+        "<strong>Environment:</strong> I participate from a quiet environment and can <strong>work uninterrupted</strong>.</p>")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -53,17 +58,23 @@ newTrial("intro",
         .wait()
 )
 
+
 newTrial("instructions",
 
-    newText("<p>In this experiment, we want to test whether and how well people can memorise words.</p>" +
+    newText("<p><strong>The memory experiment</strong></p>")
+        .css("font-size", "1.2em")
+        .css("font-family", "Verdana")
+        .print()
+    ,
+    newText("<p>We want to test whether and how well people can memorise words. The experiment consists of two parts:</p>" +
         "<p>In the <strong>memory</strong> phase, you will see 30 words, one at a time, for 2 seconds each.<br/>"+
         "Your task in this phase is to look at the words and memorise them. <strong>DO NOT WRITE THEM DOWN.</strong></p>" +
-        "<p>In the <strong>recall</strong> phase, you are then shown 30 additional words. Your task is to decide,<br/>" +
-        "as quickly and accurately as possible, whether you saw that word in the memory phase before.<br/>"+
+        "<p>In the <strong>recall</strong> phase, you are shown 30 words. Your task is to decide,<br/>" +
+        "as quickly and accurately as possible, whether you saw the word on the screen in the memory phase before.<br/>"+
         "(There will be instructions on how to do this before the recall task.)</p>" +
-        "<p><strong>IMPORTANT: Please do not write the words down</strong>, we want to know about human memory.<br/>" +
+        "<p><strong>IMPORTANT (again): Please do not write the words down</strong>, we want to know about human memory.<br/>" +
         "(In fact, your response times will show whether you followed the instructions or not<br/>" +
-        "because looking up words will take too long. We assume you are cooperative anyway.)</p>")
+        "because looking up words will take too long. However, we assume you are cooperative anyway.)</p>")
         .css("font-family", "Verdana")
         .print()
     ,
