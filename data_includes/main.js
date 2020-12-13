@@ -69,12 +69,12 @@ newTrial("instructions",
     newText("<p>We want to test whether and how well people can memorise words. The experiment consists of two parts:</p>" +
         "<p>In the <strong>memory</strong> phase, you will see 30 words, one at a time, for 2 seconds each.<br/>"+
         "Your task in this phase is to look at the words and memorise them. <strong>DO NOT WRITE THEM DOWN.</strong></p>" +
-        "<p>In the <strong>recall</strong> phase, you are shown 30 words. Your task is to decide,<br/>" +
-        "as quickly and accurately as possible, whether you saw the word on the screen in the memory phase before.<br/>"+
-        "(There will be instructions on how to do this before the recall task.)</p>" +
+        "<p>In the <strong>recall</strong> phase, you are shown 30 words. Your task is to decide, as quickly and as accurately<br/>" +
+        "as possible, whether you saw the word on the screen in the memory phase before.<br/>"+
+        "(There will be instructions on how to do this.)</p>" +
         "<p><strong>IMPORTANT (again): Please do not write the words down</strong>, we want to know about human memory.<br/>" +
-        "(In fact, your response times will show whether you followed the instructions or not<br/>" +
-        "because looking up words will take too long. However, we assume you are cooperative anyway.)</p>")
+        "(In fact, your response times will show whether you followed the instructions or not,<br/>" +
+        "because looking up words takes too long. However, we assume you are cooperative anyway.)</p>")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -128,14 +128,16 @@ Template("lg_study.csv", row =>
 
 newTrial("intermission",
     newText("<p>That's it for the memory phase. Now comes the recall phase.</p>" +
-    "<p>You will now see another 30 words. You will have to decide whether you have seen the word during the study phase.</p>"+
-    "<p>Please indicate by using the <strong>F</strong> and <strong>K</strong> keys</p>" +
-    "<p>Think <strong>F = false, not seen before</strong> and <strong>J = yes, seen before</strong></p>" +
+    "<p>You will now see another 30 words. You will have to decide whether</p>" +
+    "you have seen the word during the study phase.</p>"+
+    "<>Please indicate by using the <strong>F</strong> and <strong>K</strong> keys<br/>" +
+    "(<strong>F = false, not seen before</strong> and <strong>J = yes, seen before</strong>)</p>" +
     "<p>Please answer as quickly as possible, but try to be accurate also.</p>")
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>Please put your index fingers on the <strong>F</strong> and <strong>J</strong> keys and SPACE when you are ready.</p>")
+    newText("<p>Please put your index fingers on the <strong>F</strong> and <strong>J</strong> keys, respectively<br/>"+
+        "and SPACE when you are ready.</p>")
         .css("font-family", "Verdana")
         .print()
     ,

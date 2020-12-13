@@ -16,7 +16,7 @@ div.bar-container {
     background-color: white;
 }
 div.bar {
-    background-color: black;
+    background-color: lightgrey;
 }
 p.progress-text {
     padding-top: 0.5em;
