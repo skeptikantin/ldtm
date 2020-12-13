@@ -8,8 +8,8 @@ Sequence("intro",
     "instructions",
     randomize("study"),
     "intermission",
-    sepWithN( "break" , randomize("recall") , 34),
-    "question",
+    randomize("recall"),
+    "debrief",
     SendResults(),
     "goodbye")
 
