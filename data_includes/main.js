@@ -66,12 +66,12 @@ newTrial("instructions",
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>We want to test whether and how well people can memorise words. The experiment consists of two parts:</p>" +
-        "<p>In the <strong>memory</strong> phase, you will see 30 words, one at a time, for 2 seconds each.<br/>"+
-        "Your task in this phase is to look at the words and memorise them. <strong>DO NOT WRITE THEM DOWN.</strong></p>" +
+    newText("<p>We want to test whether and how well people can memorize words. The experiment consists of two parts:</p>" +
+        "<p>In the <strong>memory</strong> phase, you will see 30 words, one word at a time, for 2 seconds each.<br/>"+
+        "Your task in this phase is to memorize the words. <strong>DO NOT WRITE THEM DOWN.</strong></p>" +
         "<p>In the <strong>recall</strong> phase, you are shown 30 words. Your task is to decide, as quickly and as accurately<br/>" +
         "as possible, whether you saw the word on the screen in the memory phase before.<br/>"+
-        "(There will be instructions on how to do this.)</p>" +
+        "(There will be instructions on how to do this in the break between the two phases.)</p>" +
         "<p><strong>IMPORTANT (again): Please do not write the words down</strong>, we want to know about human memory.<br/>" +
         "(In fact, your response times will show whether you followed the instructions or not,<br/>" +
         "because looking up words takes too long. However, we assume you are cooperative anyway.)</p>")
@@ -128,15 +128,15 @@ Template("lg_study.csv", row =>
 
 newTrial("intermission",
     newText("<p>That's it for the memory phase. Now comes the recall phase.</p>" +
-    "<p>You will now see another 30 words. You will have to decide whether</p>" +
+    "<p>You will now see another 30 words. You will have to decide whether" +
     "you have seen the word during the study phase.</p>"+
-    "<>Please indicate by using the <strong>F</strong> and <strong>K</strong> keys<br/>" +
+    "<p>Please indicate by using the <strong>F</strong> and <strong>K</strong> keys<br/>" +
     "(<strong>F = false, not seen before</strong> and <strong>J = yes, seen before</strong>)</p>" +
     "<p>Please answer as quickly as possible, but try to be accurate also.</p>")
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>Please put your index fingers on the <strong>F</strong> and <strong>J</strong> keys, respectively<br/>"+
+    newText("<p>Please put your index fingers on the <strong>F</strong> and <strong>J</strong> keys, respectively,<br/>"+
         "and SPACE when you are ready.</p>")
         .css("font-family", "Verdana")
         .print()
@@ -229,12 +229,13 @@ newTrial("goodbye",
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p><strong>Our feedback</strong>: Some of the unseen words in the recall phase were closer in meaning to words in the<br/>"+
-        "memory phase than others. We want to know whether semantic relatedness leads to quicker and more correct answers.</p>")
+    newText("<p><strong>Our feedback</strong>: Some of the unseen words in the recall phase were<br/>"+
+        "closer in meaning to words in the memory phase than others.<br/>"+
+        "We want to know whether or not relatedness leads to quicker and more correct answers.</p>")
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<strong><a href='https://app.prolific.co/submissions/complete?cc=8B2C141F'>Click here to return to Prolific to validate your participation.</a></strong>")
+    newText("<strong><a href='https://www.sfla.ch/'>Click here to return to Prolific to validate your participation.</a></strong>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
