@@ -66,19 +66,20 @@ newTrial("instructions",
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>We want to test whether and how well people can memorize words. The experiment consists of two parts:</p>" +
+    newText("<p>We want to test how well people can memorise words. The experiment consists of two parts:</p>" +
         "<p>In the <strong>memory</strong> phase, you will see 30 words, one word at a time, for 2 seconds each.<br/>"+
-        "Your task in this phase is to memorize the words. <strong>DO NOT WRITE THEM DOWN.</strong></p>" +
+        "Your task in this phase is to memorise the words (words appear and disappear automatically).<br/>"+
+        "<strong>DO NOT WRITE THEM DOWN.</strong></p>" +
         "<p>In the <strong>recall</strong> phase, you are shown 30 words. Your task is to decide, as quickly and as accurately<br/>" +
         "as possible, whether you saw the word on the screen in the memory phase before.<br/>"+
         "(There will be instructions on how to do this in the break between the two phases.)</p>" +
         "<p><strong>IMPORTANT (again): Please do not write the words down</strong>, we want to know about human memory.<br/>" +
-        "(In fact, your response times will show whether you followed the instructions or not,<br/>" +
-        "because looking up words takes too long. However, we assume you are cooperative anyway.)</p>")
+        "(In fact, your response times would probably show whether you followed the instructions, because<br/>" +
+        "looking up words takes too long. However, we assume you are fully cooperative anyway.)</p>")
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>Press SPACE to start the memory phase.</p>")
+    newText("<p>Press SPACE to start the memory phase. The first word will appear right away.</p>")
         .css("font-family", "Verdana")
         .print()
    ,
