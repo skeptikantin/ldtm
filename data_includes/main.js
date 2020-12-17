@@ -129,8 +129,8 @@ Template("lg_study.csv", row =>
 newTrial("intermission",
     newText("<p>That's it for the memory phase. Now comes the recall phase.</p>" +
     "<p>You will now see another 30 words. You will have to decide whether<br/>" +
-    "you have seen the word during the study phase.</p>"+
-    "<p>Please indicate by using the <strong>F</strong> and <strong>K</strong> keys<br/>" +
+    "you have seen the word during the memory phase.</p>"+
+    "<p>Please indicate by using the <strong>F</strong> and <strong>J</strong> keys<br/>" +
     "(<strong>F = false, not seen before</strong> and <strong>J = yes, seen before</strong>)</p>" +
     "<p>Please answer as quickly as possible, but try to be accurate also.</p>")
         .css("font-family", "Verdana")
@@ -237,11 +237,12 @@ newTrial("goodbye",
     ,
     newText("<p><strong>Our feedback</strong>: Some of the unseen words in the recall phase were<br/>"+
         "closer in meaning to words in the memory phase than others.<br/>"+
-        "We want to know whether or not relatedness leads to quicker and more correct answers.</p>")
+        "We want to know whether or not relatedness leads to quicker and more correct answers.<br/>"+
+        "Your participation helps us investigate this question.</p>")
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<strong><a href='https://www.sfla.ch/'>Click here to return to Prolific to validate your participation.</a></strong>")
+    newText("<strong><a href=https://app.prolific.co/submissions/complete?cc=4FD982F8'>Click here to return to Prolific to validate your participation.</a></strong>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
